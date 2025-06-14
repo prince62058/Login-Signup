@@ -1,0 +1,116 @@
+/* Global Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+/* Container for background and centering */
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('bg.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form Box Styling */
+.form-box {
+    width: 90%;
+    max-width: 450px;
+    min-width: 350px;
+    background: lightgray;
+    padding: 55px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: -2px 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Form Title */
+.form-box h1 {
+    font-size: 30px;
+    color: darkcyan;
+}
+
+/* Underline Below Title */
+.underline {
+    width: 30px;
+    height: 4px;
+    background: darkcyan;
+    margin: 10px auto 50px auto;
+    border-radius: 5px;
+    transition: transform 0.5s;
+}
+
+/* Input Group Wrapper */
+.input-group {
+    height: 280px;
+}
+
+/* Input Field Row */
+.input-field {
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    max-height: 60px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+/* Input Element Styling */
+.input-field input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 18px 15px;
+}
+
+/* Icon Styling */
+.input-field i {
+    margin-left: 15px;
+    color: #999;
+}
+
+/* Paragraph and Link for Help Text */
+form p {
+    text-align: left;
+    font-size: 13px;
+}
+
+form p a {
+    text-decoration: none;
+    color: darkcyan;
+}
+
+/* Button Container */
+.btn-field {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Button Styling */
+.btn-field button {
+    flex-basis: 48%;
+    background: darkcyan;
+    color: lightgray;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Disabled Button */
+button.disable {
+    background: #eaeaea;
+    color: #999;
+}
